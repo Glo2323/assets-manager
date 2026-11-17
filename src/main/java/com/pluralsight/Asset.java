@@ -38,7 +38,7 @@ public class Asset {
     }
 
     public BigDecimal getValue() {
-
+        //?Returning the price of the asset
         return originalCost;
     }
 }
