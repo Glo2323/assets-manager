@@ -16,6 +16,7 @@ public class House extends Asset {
         this.lotSize = lotSize;
     }
 
+
     public String getAddress() {
         return address;
     }
@@ -48,9 +49,9 @@ public class House extends Asset {
         this.lotSize = lotSize;
     }
 
+    @Override
     public BigDecimal getValue() {
         BigDecimal value = BigDecimal.ZERO;
-
         if (condition == 1){
             value = BigDecimal.valueOf((180.00 * squareFoot) + .25 * lotSize);
         }else if (condition == 2){
